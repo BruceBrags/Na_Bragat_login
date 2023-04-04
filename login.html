@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style_login.css">
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+  <div id="Intro">
+  <h1>Race and Gender Discrimination</h1>
+  <p class="introTxt">In current times, there are still many cases of discrimination. Among them are discrimination against certain races and what gender people choose to identify as. This is not to say that all of the assumptions that people make are incorrect, it is to say that generalizing these groups of people based on their negative aspects is wrong. In order to help reduce these cases, people like you and I can spread awareness and educate others about the less prejudiced way of viewing these groups.</p>
+</div>
+<div class="container">
+  <h1>Login</h1>
+  <form id="login-form">
+    <p id="error"></p>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <button id="login-btn" type="submit">Login</button>
+  </form>
+  <p>Forgot your password? <a href="#">Reset it here.</a></p>
+</div>
+<script type="text/javascript">
+  document.getElementById("login-form").addEventListener("submit", function(event){
+    event.preventDefault();
+    checkInput();
+  });
+</script>
+</body>
+</html>
